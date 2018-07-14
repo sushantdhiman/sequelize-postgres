@@ -61,4 +61,4 @@ RUN set -ex \
     && apk del .fetch-deps .build-deps .build-deps-testing
 
 COPY ./init-sequelize-db.sh /docker-entrypoint-initdb.d/postgis.sh
-COPY ./update-sequelize-db.sh /usr/local/bin
+COPY ./update-sequelize-db.sh /usr/local/bin/update-sequelize-db.sh
