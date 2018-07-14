@@ -1,3 +1,0 @@
-CREATE EXTENSION hstore;
-CREATE EXTENSION btree_gist;
-CREATE EXTENSION postgis;

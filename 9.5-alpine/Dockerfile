@@ -60,4 +60,5 @@ RUN set -ex \
     && rm -rf /usr/src/postgis \
     && apk del .fetch-deps .build-deps .build-deps-testing
 
-COPY 00-extensions.sql /docker-entrypoint-initdb.d/
+COPY init-sequelize-db.sh /docker-entrypoint-initdb.d/
+COPY update-sequelize-db.sh /usr/local/bin
